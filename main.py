@@ -9,3 +9,15 @@ def iterate(value: str) -> str:
         new_value += f"{len(list(group))}{k}"
 
     return new_value
+
+
+def example(data: str):
+    for i in range(0, 50):
+        data = iterate(data)
+
+    found = len(data)
+
+    if not found:
+        raise ValueError()
+
+    return found
